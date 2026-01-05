@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vansh Visaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader-text">Initializing Security Protocols...</div>
+        <div class="loader-bar-container">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <div class="custom-cursor"></div>
+
+    <canvas id="matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="logo">Vansh Visaria</div>            
+            <nav class="main-nav">
+                <a href="#hero" class="nav-link" data-target="hero">Home</a>
+                <a href="#about" class="nav-link" data-target="about">About</a>
+                <a href="#skills" class="nav-link" data-target="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-target="projects">Projects</a>
+                <a href="#blog" class="nav-link" data-target="blog">Blog</a>
+                <a href="#challenges" class="nav-link" data-target="challenges">Challenges</a>
+                <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌗</button>
+        </header>
+
+        <main id="page-content-wrapper">
+            <section id="hero" class="page-section full-screen-section active-section">
+                <div class="hero-content">
+                    <h1 class="hero-title cyber-reveal-text" data-original-text="Welcome To My Zone Of Cybersecurity">
+                        Welcome To My Zone Of Cybersecurity
+                    </h1>
+                    <p class="hero-subtitle">CEH | CRTA | CNSP | C3SA Certified Security Professional</p>
+                    <div class="ascii-terminal-container">
+                        <pre id="ascii-terminal-output"></pre>
+                    </div>
+                </div>
+                <canvas id="plexus-canvas"></canvas>
+            </section>
+
+            <section id="about" class="page-section content-section">
+                <div class="container">
+                    <div class="about-layout">
+                        <div class="about-text-content">
+                            <h2>// About Me</h2>
+                            <p>
+                                I am a passionate and driven Cybersecurity Engineering student with a strong foundation in computer networks, ethical hacking, and information security principles. Currently pursuing my degree in Cybersecurity Engineering, I’m focused on developing both the theoretical knowledge and practical skills necessary to secure digital infrastructure in an increasingly connected world.                            </p>
+                            <p>
+                                My academic journey has equipped me with expertise in core areas like network security, cryptography, secure software development, penetration testing, digital forensics, and risk management. I thrive on solving complex security problems and have hands-on experience working with tools such as Wireshark, Kali Linux, Metasploit, Burp Suite, Nmap, and various SIEM platforms.
+                            </p>
+                             <p>
+                                I am constantly learning and staying updated with the latest trends in cybersecurity—whether it's analyzing emerging threats, participating in Capture The Flag (CTF) competitions, or exploring cybersecurity research topics. My coursework is often complemented by personal projects, certifications, and internships that deepen my understanding of real-world security challenges.                            </p>
+                            <p>
+                                Outside academics, I actively participate in cybersecurity communities and forums, attend security conferences and workshops, and collaborate with peers on security audits and simulations. I'm also a CEH (Certified Ethical Hacker). My long-term goal is to contribute to building secure systems and solutions that protect individuals, businesses, and governments from cyber threats. I’m open to opportunities where I can apply my skills, grow with industry professionals, and make a meaningful impact in the field of cybersecurity.                            </p>
+                        </div>
+                        <div class="about-image-container">
+                            <img src="images/your-profile-picture.jpg" alt="Vansh Visaria - Cybersecurity Professional" id="about-me-image">
+                            <p class="image-caption">"Securing tomorrow's innovations, today."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="page-section content-section">
+                <div class="container">
+                    <h2>// Core Competencies</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-level="90"><h3>Penetration Testing</h3><p>Web Apps, Network, IoT, Hardware Devices</p></div>
+                        <div class="skill-card" data-level="85"><h3>Network Security</h3><p>Firewall Config, IDS/IPS, Traffic Analysis</p></div>
+                        <div class="skill-card" data-level="88"><h3>System Configuration</h3><p>Linux Hardening, Windows Security, Server Setup</p></div>
+                        <div class="skill-card" data-level="82"><h3>Web Application Security</h3><p>OWASP Top 10, SQL Injection, XSS, CSRF</p></div>
+                        <div class="skill-card" data-level="80"><h3>IoT & Hardware Security</h3><p>Firmware Analysis, Device Exploitation, UART/JTAG</p></div>
+                        <div class="skill-card" data-level="78"><h3>OSINT & Threat Intel</h3><p>Reconnaissance, IP Tracking, Threat Actor Analysis</p></div>
+                        <div class="skill-card" data-level="75"><h3>Linux Administration</h3><p>Kali, Ubuntu, Shell Scripting, Service Management</p></div>
+                        <div class="skill-card" data-level="72"><h3>Web Development</h3><p>Python, JavaScript, HTML/CSS, Flask/Django</p></div>
+                    </div>
+                    <div class="tools-section">
+                        <h3>// Tools & Technologies</h3>
+                        <div class="tools-list">
+                            <span class="tool-tag">Burp Suite</span>
+                            <span class="tool-tag">Metasploit</span>
+                            <span class="tool-tag">Nmap</span>
+                            <span class="tool-tag">Wireshark</span>
+                            <span class="tool-tag">Kali Linux</span>
+                            <span class="tool-tag">OWASP ZAP</span>
+                            <span class="tool-tag">Nessus</span>
+                            <span class="tool-tag">Nikto</span>
+                            <span class="tool-tag">SQLMap</span>
+                            <span class="tool-tag">Ghidra</span>
+                            <span class="tool-tag">Binwalk</span>
+                            <span class="tool-tag">John the Ripper</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="page-section content-section">
+                <div class="container">
+                    <h2>// Featured Projects</h2>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <a href="https://github.com/Vansh-Visaria" target="_blank" class="project-card-link-wrapper">
+                                <div class="project-card-image-container"><img src="images/ip-logger.jpg" alt="IP-Logger Project" loading="lazy"></div>
+                                <div class="project-card-content">
+                                    <h3>IP-Logger</h3>
+                                    <p class="project-tags"><span>OSINT</span><span>URL Tracking</span><span>Python</span><span>Web App</span></p>
+                                    <p class="project-excerpt">An application that customizes any URL and captures user information when clicked - including IP address, geolocation, browser details, and more. Built for security analysis and OSINT reconnaissance of threat actors.</p>
+                                    <span class="project-cta">View on GitHub →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="project-card">
+                            <a href="https://github.com/Vansh-Visaria" target="_blank" class="project-card-link-wrapper">
+                                <div class="project-card-image-container"><img src="images/ctf-playground.jpg" alt="CTF Playground" loading="lazy"></div>
+                                <div class="project-card-content">
+                                    <h3>CTF Playground</h3>
+                                    <p class="project-tags"><span>CTF Platform</span><span>Web Security</span><span>Ethical Hacking</span><span>Education</span></p>
+                                    <p class="project-excerpt">Designed and developed a Capture The Flag website featuring various security challenges aimed at testing penetration testing and ethical hacking skills. Specifically designed for beginners to learn hands-on security concepts.</p>
+                                    <span class="project-cta">Explore Platform →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="project-card">
+                            <a href="https://github.com/Vansh-Visaria" target="_blank" class="project-card-link-wrapper">
+                                <div class="project-card-image-container"><img src="images/fortichain.jpg" alt="FortiChain Project" loading="lazy"></div>
+                                <div class="project-card-content">
+                                    <h3>FortiChain: Physical Access Incident Response</h3>
+                                    <p class="project-tags"><span>EDR</span><span>Physical Security</span><span>Incident Response</span><span>Automation</span></p>
+                                    <p class="project-excerpt">FortiChain is the EDR for physical space. Just as Endpoint Detection and Response secures IT environments, FortiChain integrates detection, investigation, and automated response for physical access security incidents.</p>
+                                    <span class="project-cta">View Details →</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="challenges" class="page-section content-section">
+                <div class="container">
+                    <h2>// CTF Playground</h2>
+                    <div class="ctf-redirect-box">
+                        <div class="ctf-icon">🏴‍☠️</div>
+                        <h3>Learn Ethical Hacking - Hands On!</h3>
+                        <p>I've built <strong>CTF Playground</strong> - a beginner-friendly Capture The Flag platform designed to help aspiring security professionals learn penetration testing and ethical hacking through practical challenges.</p>
+                        <p class="ctf-features">
+                            <span>✓ Beginner-friendly challenges</span>
+                            <span>✓ Web Security & OWASP Top 10</span>
+                            <span>✓ Network Exploitation</span>
+                            <span>✓ Cryptography Puzzles</span>
+                        </p>
+                        <a href="https://github.com/Vansh-Visaria" class="btn-ctf" id="ctf-platform-link" target="_blank" rel="noopener noreferrer">
+                            View on GitHub →
+                        </a>
+                        <p class="ctf-note">New challenges added regularly. Perfect for beginners starting their cybersecurity journey!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="page-section content-section">
+                <div class="container">
+                    <h2>// Insights & Write-ups</h2>
+                    <div class="blog-grid">
+                        <article class="blog-post-card">
+                            <a href="#" class="blog-post-link">
+                                <div class="blog-post-image-container">
+                                    <img src="images/blog-placeholder-1.jpg" alt="Blog Post 1 Visual" loading="lazy">
+                                </div>
+                                <div class="blog-post-content">
+                                    <p class="blog-post-meta"><span>Ransomware Defense</span> | <time datetime="2024-03-10">March 10, 2024</time></p>
+                                    <h3>The Evolving Landscape of Ransomware Attacks in 2024</h3>
+                                    <p class="blog-post-excerpt">A deep dive into new ransomware TTPs (Tactics, Techniques, and Procedures) and effective multi-layered mitigation strategies for modern enterprises...</p>
+                                    <span class="blog-post-cta">Read More →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="blog-post-card">
+                             <a href="#" class="blog-post-link">
+                                <div class="blog-post-image-container">
+                                    <img src="images/blog-placeholder-2.jpg" alt="Blog Post 2 Visual" loading="lazy">
+                                </div>
+                                <div class="blog-post-content">
+                                    <p class="blog-post-meta"><span>Threat Hunting</span> | <time datetime="2024-02-22">February 22, 2024</time></p>
+                                    <h3>Proactive Defense: Building an Effective Threat Hunting Program</h3>
+                                    <p class="blog-post-excerpt">Moving beyond reactive security: key steps, methodologies (like MITRE ATT&CK), and tools for establishing an effective in-house threat hunting capability...</p>
+                                    <span class="blog-post-cta">Read More →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="blog-post-card">
+                             <a href="#" class="blog-post-link">
+                                <div class="blog-post-image-container">
+                                    <img src="images/blog-placeholder-3.jpg" alt="Blog Post 3 Visual" loading="lazy">
+                                </div>
+                                <div class="blog-post-content">
+                                    <p class="blog-post-meta"><span>Secure Development (SSDLC)</span> | <time datetime="2024-01-15">January 15, 2024</time></p>
+                                    <h3>Top 5 Pitfalls in Implementing a Secure Software Development Lifecycle</h3>
+                                    <p class="blog-post-excerpt">Common mistakes organizations make when trying to integrate security into their development processes, and how to avoid them for robust application security...</p>
+                                    <span class="blog-post-cta">Read More →</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="page-section content-section">
+                <div class="container">
+                    <h2>// Establish Comms</h2>
+                    <p>I'm always open to discussing new challenges, collaborations, or sharing insights on the latest in cybersecurity. Let's connect and explore how we can make the digital world safer together.</p>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xnndrjna" method="POST">
+                        <input type="text" name="name" placeholder="Your Name / Handle" required>
+                        <input type="email" name="email" placeholder="Your Email (for reply)" required>
+                        <textarea name="message" placeholder="Your Encrypted Message (not really)" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Transmit Securely</button>
+                    </form>
+                    <p id="form-status" class="form-status-message"></p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/vansh-visaria" target="_blank">LinkedIn</a> | 
+                        <a href="https://github.com/Vansh-Visaria" target="_blank">GitHub</a> | 
+                        <a href="mailto:vanshav23@gmail.com">Email</a>
+                    </div>
+                    <p class="contact-info">📍 Mumbai, Maharashtra | 📧 vanshav23@gmail.com</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer-bottom">
+            <p>© <span id="current-year"></span> Vansh Visaria. All rights reserved. // Digital Integrity Maintained</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
