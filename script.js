@@ -200,6 +200,60 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // --- Statistics Counter Animation ---
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let statsAnimated = false;
+        
+        function animateStats() {
+            if (statsAnimated) return;
+            statsAnimated = true;
+            
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.dataset.target);
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        stat.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        stat.textContent = target;
+                    }
+                };
+                
+                updateCounter();
+            });
+        }
+        
+        // Trigger stats animation when stats section is visible
+        const statsSection = document.getElementById('stats');
+        if (statsSection && gsap && gsap.registerPlugin) {
+            try {
+                gsap.registerPlugin(ScrollTrigger);
+                ScrollTrigger.create({
+                    trigger: statsSection,
+                    start: 'top 80%',
+                    onEnter: animateStats,
+                    once: true
+                });
+            } catch (e) {
+                // Fallback: animate when section becomes active
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                        if (mutation.attributeName === 'class' && 
+                            statsSection.classList.contains('active-section')) {
+                            animateStats();
+                        }
+                    });
+                });
+                observer.observe(statsSection, { attributes: true });
+            }
+        }
+
+
         function initAsciiTerminalAnimation() {
             const terminalOutput = document.getElementById('ascii-terminal-output');
             const terminalContainer = document.querySelector('.ascii-terminal-container');
